@@ -2,8 +2,12 @@ version: '3.8'
 
 services:
   website:
-    image: shamel1012/dream-sequencer:latest
+    build:
+      context: .
+
     container_name: dream-sequencer
+
     ports:
       - 80:80
+
     restart: always
