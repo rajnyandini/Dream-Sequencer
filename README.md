@@ -24,6 +24,76 @@ The **Dream Sequencer** is an interactive, web-based tool that allows users to g
 - **CSS**: For styling the page, including animations and responsiveness.
 - **JavaScript**: For creating the particle system, sound generation, and interactive features.
 
+
+## 🐳 Docker Support
+
+This project now includes Docker and Docker Compose support for simplified deployment and portability.
+
+### Dockerfile
+
+Build the Docker image locally:
+
+```bash
+docker build -t dream-sequencer .
+```
+
+Run the container:
+
+```bash
+docker run -d \
+  --name dream-sequencer \
+  -p 80:80 \
+  dream-sequencer
+```
+
+Access the application:
+
+```text
+http://localhost
+```
+
+---
+
+### Docker Compose
+
+Build and start the application:
+
+```bash
+docker compose up -d --build
+```
+
+Stop the application:
+
+```bash
+docker compose down
+```
+
+---
+
+## 🚀 Contribution
+
+The following enhancements were contributed by **Shamel Khan**:
+
+* Added Docker containerization support using Nginx.
+* Added Docker Compose configuration for simplified deployment.
+* Improved project documentation with Docker setup instructions.
+* Enhanced project deployment workflow for local and cloud environments.
+* Updated repository structure for easier onboarding and execution.
+
+These changes do not modify the core particle generation or audio synthesis logic and are focused on deployment, portability, and developer experience.
+
+---
+
+## 🙌 Credits
+
+Original Project Author: **Rajnandini**
+
+Original Repository:
+https://github.com/rajnyandini/Dream-Sequencer
+
+Dockerization, deployment improvements, and documentation enhancements contributed by **Shamel Khan**.
+
+
 ##  Preview  
 
 <img src="https://raw.githubusercontent.com/rajnandiniini/Dream/main/images/p1.png" width="300" height="auto">
